@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buzz Off - Section 2 Pain Points</title>
+<style>
+:root{
+--green:#1F5E3D;
+--leaf:#63A86E;
+--cream:#FAF7F2;
+--text:#213127;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:Arial,sans-serif;
+background:var(--cream);
+padding:80px 8%;
+color:var(--text);
+}
+.pain-section{
+max-width:1200px;
+margin:auto;
+text-align:center;
+}
+.pain-section h2{
+font-size:46px;
+color:var(--green);
+margin-bottom:18px;
+}
+.subtitle{
+font-size:20px;
+color:#666;
+margin-bottom:60px;
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:28px;
+}
+.card{
+background:#fff;
+padding:38px 30px;
+border-radius:24px;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+transition:.35s;
+}
+.card:hover{
+transform:translateY(-8px);
+}
+.icon{
+width:100px;
+height:100px;
+margin:0 auto 24px;
+background:#EEF7F1;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.icon img{
+width:60%;
+height:60%;
+object-fit:contain;
+transition:.35s;
+}
+.card:hover .icon img{
+transform:scale(1.08) rotate(-5deg);
+}
+.card h3{
+font-size:24px;
+color:var(--green);
+margin-bottom:16px;
+line-height:1.35;
+}
+.card p{
+font-size:17px;
+line-height:1.65;
+color:#555;
+}
+.cta{
+margin-top:70px;
+}
+.cta p{
+font-size:30px;
+font-weight:700;
+color:var(--green);
+}
+@media(max-width:768px){
+.pain-section h2{font-size:34px;}
+.subtitle{font-size:18px;}
+.cta p{font-size:24px;}
+}
+</style>
+</head>
+<body>
+
+<section class="pain-section">
+
+<h2>Bạn có đang gặp những vấn đề này?</h2>
+
+<p class="subtitle">
+Đã đến lúc tạm dừng để lắng nghe chính mình.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">
+<img src="images/burnout.png" alt="Burnout">
+</div>
+<h3>Burn out vì làm việc liên tục?</h3>
+<p>Áp lực công việc khiến bạn luôn mệt mỏi, thiếu năng lượng và không còn thời gian để chăm sóc bản thân.</p>
+</div>
+
+<div class="card">
+<div class="icon">
+<img src="images/balance.png" alt="Life Balance">
+</div>
+<h3>Mất cân bằng trong cuộc sống?</h3>
+<p>Công việc, điện thoại và deadline chiếm hết thời gian dành cho gia đình, bạn bè và những trải nghiệm ý nghĩa.</p>
+</div>
+
+<div class="card">
+<div class="icon">
+<img src="images/toxic.png" alt="Toxic Social Media">
+</div>
+<h3>Mệt mỏi vì nội dung toxic từ mạng xã hội?</h3>
+<p>Dòng thông tin tiêu cực liên tục khiến bạn căng thẳng, mất tập trung và khó tìm được sự bình yên.</p>
+</div>
+
+</div>
+
+<div class="cta">
+<p>🌿 Đã đến lúc trải nghiệm <strong>"DIGITAL DETOX CAMP"</strong></p>
+</div>
+
+</section>
+
+</body>
+</html>
