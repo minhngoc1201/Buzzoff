@@ -251,7 +251,88 @@ transition:.4s;
 .about-image img:hover{
 transform:translateY(-8px);
 }
+/* ==================================================
+SECTION 4 - BENEFITS
+================================================== */
+.benefits-section{
+padding:120px 8%;
+}
 
+.benefits-title{
+text-align:center;
+margin-bottom:90px;
+}
+.benefits-title span{
+display:inline-block;
+padding:10px 20px;
+background:#EEF7F1;
+border-radius:999px;
+font-weight:700;
+color:var(--green);
+margin-bottom:18px;
+}
+.benefits-title h2{
+font-size:48px;
+color:var(--green);
+margin-bottom:18px;
+}
+.benefits-title p{
+font-size:20px;
+color:#666;
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+.benefit{
+max-width:1200px;
+margin:0 auto 120px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+.benefit.reverse{
+direction:rtl;
+}
+.benefit.reverse>*{
+direction:ltr;
+}
+.benefit-image{
+display:flex;
+justify-content:center;
+}
+.benefit-image img{
+width:100%;
+max-width:520px;
+border-radius:26px;
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+transition:.4s;
+}
+.benefit-image img:hover{
+transform:translateY(-10px);
+}
+.benefit-text h3{
+font-size:34px;
+color:var(--green);
+margin-bottom:20px;
+line-height:1.3;
+}
+.benefit-text p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+}
+@media(max-width:900px){
+.benefit{
+grid-template-columns:1fr;
+}
+.benefit.reverse{
+direction:ltr;
+}
+.benefits-title h2{
+font-size:38px;
+}
+}
 /* ==========================
 RESPONSIVE CHO MOBILE & TABLET
 ========================== */
@@ -429,9 +510,66 @@ Trong suốt 48 giờ, bạn sẽ không sử dụng bất kỳ thiết bị có
 <div class="about-image">
 <img src="./Buzz Off_20.07_files/About us.png" alt="Buzz Off Digital Detox Camp">
 </div>
-
+</p>
 </div>
-
+</div>
+<!-- ==================================================
+SECTION 4 - BENEFITS
+================================================== -->
+<section class="benefits-section">
+<div class="benefits-title">
+<span>🌿 BENEFITS OF DIGITAL DETOX</span>
+<h2>Lợi ích của Digital Detox</h2>
+<p>
+Không chỉ là một chuyến đi, đây là hành trình giúp bạn tái tạo năng lượng,
+tìm lại sự cân bằng và xây dựng một lối sống lành mạnh trong thời đại số.
+</p>
+</div>
+<!-- Benefit 1 -->
+<div class="benefit">
+<div class="benefit-image">
+<img src="images/benefit1.jpg"
+alt="Benefit 1">
+</div>
+<div class="benefit-text">
+<h3>
+Phục hồi năng lượng, vượt qua Burnout
+</h3>
+<p>
+Hãy tạm gác lại những áp lực, deadline và guồng quay không hồi kết của cuộc sống thường ngày. Thông qua các hoạt động lao động chân tay, khám phá thiên nhiên và những khoảng lặng ý nghĩa, Buzz Off giúp bạn tái tạo năng lượng tinh thần, giải tỏa căng thẳng và học cách chăm sóc bản thân bằng sự hiện diện trọn vẹn.
+</p>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="benefit reverse">
+<div class="benefit-image">
+<img src="images/benefit2.jpg"
+alt="Benefit 2">
+</div>
+<div class="benefit-text">
+<h3>
+Tìm lại sự cân bằng và giá trị sống
+</h3>
+<p>
+Khi tạm rời xa màn hình điện thoại, bạn sẽ có nhiều thời gian hơn để kết nối với thiên nhiên và những người đồng hành. Những cuộc trò chuyện chân thành, những trải nghiệm tập thể và những phút giây lắng nghe chính mình sẽ giúp bạn nhìn rõ hơn điều thực sự quan trọng trong cuộc sống.
+</p>
+</div>
+</div>
+<!-- Benefit 3 -->
+<div class="benefit">
+<div class="benefit-image">
+<img src="images/benefit3.jpg"
+alt="Benefit 3">
+</div>
+<div class="benefit-text">
+<h3>
+Thải độc số, khơi dậy tâm trí tỉnh thức
+</h3>
+<p>
+Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off mang đến cho bạn cơ hội "làm sạch" tâm trí khỏi những nội dung tiêu cực. Kết hợp trải nghiệm Digital Detox cùng các hoạt động phát triển tư duy, bạn sẽ lấy lại khả năng tập trung sâu, nuôi dưỡng sự bình yên và xây dựng một mối quan hệ lành mạnh hơn với công nghệ.
+</p>
+</div>
+</div>
 </section>
-
+</section>
 </body></html>
