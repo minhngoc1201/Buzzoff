@@ -259,7 +259,7 @@ transition:.4s;
 transform:translateY(-8px);
 }
 /* ==================================================
-SECTION 4 - BENEFITS
+CSS ECTION 4 - BENEFITS
 ================================================== */
 .benefits-section{
 padding:120px 8%;
@@ -339,6 +339,373 @@ direction:ltr;
 .benefits-title h2{
 font-size:38px;
 }
+}
+/* ==================================================
+   SECTION 5 — BUZZOFF JOURNEY / 5 MILESTONES
+   DÁN CSS NÀY NGAY TRƯỚC </style>
+================================================== */
+
+.milestones-section {
+    padding: 130px 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+.milestones-header {
+    max-width: 760px;
+    margin: 0 auto 90px;
+    text-align: center;
+}
+
+.milestones-label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+    background: #eef7f1;
+    color: var(--green);
+
+    border-radius: 999px;
+
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.milestones-header h2 {
+    margin: 0 0 20px;
+
+    color: var(--green);
+
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.milestones-header p {
+    max-width: 650px;
+    margin: auto;
+
+    color: #666;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   TIMELINE
+============================== */
+
+.milestones-timeline {
+    position: relative;
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* Đường timeline ở giữa */
+
+.milestones-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 50%;
+
+    width: 3px;
+
+    background: linear-gradient(
+        to bottom,
+        var(--yellow),
+        var(--green),
+        var(--orange)
+    );
+
+    transform: translateX(-50%);
+
+    border-radius: 999px;
+}
+
+
+/* ==============================
+   MILESTONE ITEM
+============================== */
+
+.milestone {
+    position: relative;
+
+    width: 50%;
+
+    padding: 0 60px 80px;
+}
+
+
+/* Item bên trái */
+
+.milestone:nth-child(odd) {
+    text-align: right;
+    padding-left: 0;
+}
+
+
+/* Item bên phải */
+
+.milestone:nth-child(even) {
+    margin-left: 50%;
+    text-align: left;
+    padding-right: 0;
+}
+
+
+/* ==============================
+   DOT
+============================== */
+
+.milestone::after {
+    content: "";
+
+    position: absolute;
+
+    top: 8px;
+
+    width: 18px;
+    height: 18px;
+
+    background: var(--yellow);
+
+    border: 5px solid var(--cream);
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 0 3px var(--green);
+
+    z-index: 2;
+}
+
+
+/* Dot bên trái */
+
+.milestone:nth-child(odd)::after {
+    right: -10px;
+}
+
+
+/* Dot bên phải */
+
+.milestone:nth-child(even)::after {
+    left: -10px;
+}
+
+
+/* ==============================
+   CONTENT CARD
+============================== */
+
+.milestone-content {
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.78);
+
+    border: 1px solid rgba(31, 95, 62, 0.08);
+
+    border-radius: 26px;
+
+    box-shadow: 0 15px 40px rgba(31, 49, 39, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.milestone-content:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 22px 50px rgba(31, 49, 39, 0.13);
+}
+
+
+/* ==============================
+   NUMBER
+============================== */
+
+.milestone-number {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--orange);
+
+    font-size: 14px;
+    font-weight: 900;
+
+    letter-spacing: 0.15em;
+}
+
+
+/* ==============================
+   TITLE
+============================== */
+
+.milestone-title {
+    margin: 0 0 8px;
+
+    color: var(--green);
+
+    font-size: 30px;
+    line-height: 1.2;
+
+    font-weight: 850;
+}
+
+
+/* ==============================
+   TAGLINE
+============================== */
+
+.milestone-tagline {
+    display: block;
+
+    margin-bottom: 16px;
+
+    color: #333;
+
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+/* ==============================
+   DESCRIPTION
+============================== */
+
+.milestone-description {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+
+/* ==============================
+   ICON
+============================== */
+
+.milestone-icon {
+    display: inline-flex;
+
+    width: 52px;
+    height: 52px;
+
+    margin-bottom: 18px;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f9e9;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 900px) {
+
+    .milestones-section {
+        padding: 90px 6%;
+    }
+
+    .milestones-header {
+        margin-bottom: 60px;
+    }
+
+    .milestones-header h2 {
+        font-size: 40px;
+    }
+
+    .milestones-timeline::before {
+        left: 20px;
+    }
+
+    .milestone,
+    .milestone:nth-child(odd),
+    .milestone:nth-child(even) {
+
+        width: 100%;
+
+        margin-left: 0;
+
+        padding-left: 65px;
+        padding-right: 0;
+
+        text-align: left;
+    }
+
+    .milestone::after,
+    .milestone:nth-child(odd)::after,
+    .milestone:nth-child(even)::after {
+
+        left: 11px;
+        right: auto;
+
+    }
+
+    .milestone-content {
+        padding: 25px;
+    }
+
+    .milestone-title {
+        font-size: 26px;
+    }
+
+}
+
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 500px) {
+
+    .milestones-section {
+        padding: 75px 5%;
+    }
+
+    .milestones-header h2 {
+        font-size: 34px;
+    }
+
+    .milestones-header p {
+        font-size: 16px;
+    }
+
+    .milestone {
+        padding-left: 50px !important;
+    }
+
+    .milestones-timeline::before {
+        left: 15px;
+    }
+
+    .milestone::after,
+    .milestone:nth-child(odd)::after,
+    .milestone:nth-child(even)::after {
+
+        left: 6px;
+
+    }
+
 }
 /* ==========================
 RESPONSIVE CHO MOBILE & TABLET
@@ -435,7 +802,7 @@ RESPONSIVE CHO MOBILE & TABLET
 <div class="tag">Digital Detox Camp</div>
 <h1>Disconnect.<br><span>Reconnect.</span></h1>
 <p class="hero-slogan">No Screen. More Green. Real You.</p>
-<p class="hero-description">Hành trình giúp bạn tạm rời xa thiết bị điện tử để kết nối với thiên nhiên, bản thân và những người xung quanh.</p>
+<p class="hero-description">Hành trình giúp bạn tạm rời xa màn hình để kết nối với thiên nhiên, bản thân và những người xung quanh, đồng thời học cách nhìn nhận và chọn lọc thế giới thông tin một cách chủ động hơn.</p>
 <div class="buttons">
 <a href="file:///D:/Buzzoff/index_V4.html#" class="btn primary">Đặt tour</a>
 <a href="file:///D:/Buzzoff/index_V4.html#" class="btn secondary">Khám phá</a>
@@ -481,8 +848,8 @@ RESPONSIVE CHO MOBILE & TABLET
 <div class="icon">
 <img src="./Buzz Off_20.07_files/Icon sad.png" alt="Toxic Social Media">
 </div>
-<h3>Mệt mỏi vì nội dung toxic từ mạng xã hội?</h3>
-<p>Dòng thông tin tiêu cực liên tục khiến bạn căng thẳng, mất tập trung và khó tìm được sự bình yên.</p>
+<h3>Quá tải vì dòng thông tin độc hại?</h3>
+<p>Tin giả, nội dung giật gân và những lời nói đầy thù ghét liên tục kéo bạn vào một dòng chảy thông tin tiêu cực — khiến bạn khó phân biệt điều gì đáng tin, điều gì đáng quan tâm.</p>
 </div>
 
 </div>
@@ -511,7 +878,7 @@ Buzz Off là gì?
 Trong hành trình này, bạn sẽ cùng chúng mình tham gia nhiều hoạt động giữa thiên nhiên, từ trekking, cắm trại, workshop đến những khoảng lặng để hít thở, quan sát và lắng nghe chính mình. Mỗi trải nghiệm đều được thiết kế để giúp bạn tái tạo năng lượng, tìm lại sự cân bằng và kết nối sâu sắc hơn với cuộc sống.
 </p>
 <div class="about-note">
-Trong suốt 48 giờ, bạn sẽ không sử dụng bất kỳ thiết bị có kết nối Internet nào. Đây không phải là một thử thách để "chịu đựng", mà là một cơ hội để bạn sống trọn vẹn với từng khoảnh khắc hiện tại.
+Trong suốt 36 giờ, bạn sẽ không sử dụng bất kỳ thiết bị có kết nối Internet nào. Đây không phải là một thử thách để "chịu đựng", mà là một cơ hội để bạn sống trọn vẹn với từng khoảnh khắc hiện tại.
 </div>
 </div>
 <div class="about-image">
@@ -555,10 +922,10 @@ alt="Benefit 2">
 </div>
 <div class="benefit-text">
 <h3>
-Tìm lại sự cân bằng và giá trị sống
+Tìm thấy những kết nối không cần màn hình
 </h3>
 <p>
-Khi tạm rời xa màn hình điện thoại, bạn sẽ có nhiều thời gian hơn để kết nối với thiên nhiên và những người đồng hành. Những cuộc trò chuyện chân thành, những trải nghiệm tập thể và những phút giây lắng nghe chính mình sẽ giúp bạn nhìn rõ hơn điều thực sự quan trọng trong cuộc sống.
+Cùng cộng đồng người lớn tuổi chia sẻ, lắng nghe và học hỏi từ những câu chuyện đời thực, đồng thời khám phá cách nhận biết và chọn lọc thông tin đáng tin cậy trong thế giới số. Để rồi nhận ra, đôi khi điều giúp ta cân bằng không phải là kết nối nhiều hơn trên mạng, mà là kết nối sâu hơn với những người đang ở ngay bên cạnh mình.
 </p>
 </div>
 </div>
@@ -577,6 +944,247 @@ Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off m
 </p>
 </div>
 </div>
+<!-- =========================================================
+     SECTION 5 — BUZZOFF JOURNEY / 5 MILESTONES
+     DÁN NGAY SAU SECTION 4
+========================================================= -->
+
+<section class="milestones-section">
+
+    <!-- =========================
+         SECTION HEADER
+    ========================== -->
+
+    <div class="milestones-header">
+
+        <span class="milestones-label">
+            THE BUZZOFF JOURNEY
+        </span>
+
+        <h2>
+            5 bước để<br>
+            trở về với chính mình.
+        </h2>
+
+        <p>
+            Một hành trình 36 giờ offline,
+            nơi mỗi trải nghiệm đưa bạn đến gần hơn
+            với thiên nhiên, những người xung quanh
+            và chính bản thân mình.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         TIMELINE
+    ========================== -->
+
+    <div class="milestones-timeline">
+
+
+        <!-- =================================
+             01 — DISCONNECT
+        ================================== -->
+
+        <div class="milestone">
+
+            <div class="milestone-content">
+
+                <!-- PNG ICON 01 -->
+                <div class="milestone-icon">
+                    <img
+                        src="images/icon-disconnect.png"
+                        alt="Disconnect"
+                    >
+                </div>
+
+                <span class="milestone-number">
+                    01 — DISCONNECT
+                </span>
+
+                <h3 class="milestone-title">
+                    Disconnect
+                </h3>
+
+                <span class="milestone-tagline">
+                    "Leave the screen behind"
+                </span>
+
+                <p class="milestone-description">
+                    Bắt đầu hành trình 36 giờ offline cùng
+                    Buzzoff Handbook – tạm đặt màn hình xuống
+                    và mở ra một hành trình hoàn toàn khác.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             02 — DISCOVER
+        ================================== -->
+
+        <div class="milestone">
+
+            <div class="milestone-content">
+
+                <!-- PNG ICON 02 -->
+                <div class="milestone-icon">
+                    <img
+                        src="images/icon-discover.png"
+                        alt="Discover"
+                    >
+                </div>
+
+                <span class="milestone-number">
+                    02 — DISCOVER
+                </span>
+
+                <h3 class="milestone-title">
+                    Discover
+                </h3>
+
+                <span class="milestone-tagline">
+                    "The Story Behind The Story"
+                </span>
+
+                <p class="milestone-description">
+                    Khám phá những di tích, câu chuyện,
+                    con người và những góc nhìn chân thực
+                    nằm ngoài thế giới Internet.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             03 — DECODE
+        ================================== -->
+
+        <div class="milestone">
+
+            <div class="milestone-content">
+
+                <!-- PNG ICON 03 -->
+                <div class="milestone-icon">
+                    <img
+                        src="images/icon-decode.png"
+                        alt="Decode"
+                    >
+                </div>
+
+                <span class="milestone-number">
+                    03 — DECODE
+                </span>
+
+                <h3 class="milestone-title">
+                    Decode
+                </h3>
+
+                <span class="milestone-tagline">
+                    "MIL Challenge"
+                </span>
+
+                <p class="milestone-description">
+                    Cùng giải mã những vấn đề của thế giới số:
+                    fake news, deepfake, thuật toán và hate speech
+                    thông qua những thử thách tương tác thực tế.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             04 — RECONNECT
+        ================================== -->
+
+        <div class="milestone">
+
+            <div class="milestone-content">
+
+                <!-- PNG ICON 04 -->
+                <div class="milestone-icon">
+                    <img
+                        src="images/icon-reconnect.png"
+                        alt="Reconnect"
+                    >
+                </div>
+
+                <span class="milestone-number">
+                    04 — RECONNECT
+                </span>
+
+                <h3 class="milestone-title">
+                    Reconnect
+                </h3>
+
+                <span class="milestone-tagline">
+                    "Heart2Heart"
+                </span>
+
+                <p class="milestone-description">
+                    Ăn cùng nhau, trò chuyện thật,
+                    ngắm sao và lắng nghe những điều
+                    mà đôi khi cuộc sống bận rộn khiến ta quên mất.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             05 — SHARE
+        ================================== -->
+
+        <div class="milestone">
+
+            <div class="milestone-content">
+
+                <!-- PNG ICON 05 -->
+                <div class="milestone-icon">
+                    <img
+                        src="images/icon-share.png"
+                        alt="Share"
+                    >
+                </div>
+
+                <span class="milestone-number">
+                    05 — SHARE
+                </span>
+
+                <h3 class="milestone-title">
+                    Share
+                </h3>
+
+                <span class="milestone-tagline">
+                    "MIL Together"
+                </span>
+
+                <p class="milestone-description">
+                    Cùng người lớn tuổi chia sẻ và học hỏi
+                    cách nhận biết, kiểm chứng và lựa chọn
+                    những thông tin đáng tin cậy.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
 </section>
 </section>
 </body></html>
