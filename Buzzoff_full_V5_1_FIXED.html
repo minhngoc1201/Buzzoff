@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0032)file:///D:/Buzzoff/index_V4.html -->
 <html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Buzz Off Digtal Detox Camp </title>
+<title>Buzz Off — Digital Detox Camp</title>
 <!-- 1. CÀI ĐẶT FAVICON  -->
-<link rel="icon" type="Image/png" href="./Buzz Off_20.07_files/Typo Buzzoff.png">
+<link rel="icon" type="image/png" href="./Buzz Off_20.07_files/Typo Buzzoff.png">
 <!-- 3. CÀI ĐẶT OPEN GRAPH (Hình ảnh và nội dung hiển thị khi share link) -->
 <meta property="og:title" content="Buzz Off - Digital Detox Camp">
 <meta property="og:description" content="Hành trình giúp bạn tạm rời xa thiết bị điện tử để kết nối với thiên nhiên, bản thân và những người xung quanh.">
@@ -13,7 +12,7 @@
 <meta property="og:image" content="./Buzz Off_20.07_files/Logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<link href="./Buzz Off_20.07_files/css2" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
 --green:#1F5E3D;--leaf:#63A86E;--yellow:#FFC94D;--orange:#F58B38;
@@ -342,7 +341,88 @@ font-size:38px;
 }
 /* ==================================================
    SECTION 5 — BUZZOFF JOURNEY / 5 MILESTONES
-================================================== */
+   DÁN CSS NÀY NGAY TRƯỚC 
+/* V5 CLEAN — global navigation / layout safeguards */
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:110px;
+}
+
+img{
+    max-width:100%;
+}
+
+section,
+footer{
+    scroll-margin-top:110px;
+}
+
+@media (max-width: 900px){
+    header{
+        width:min(94%, 620px);
+    }
+
+    .hero{
+        min-height:auto;
+        padding-top:150px;
+    }
+
+    .hero-description{
+        max-width:680px;
+    }
+
+    .pain-section,
+    .about-section,
+    .benefits-section,
+    .milestones-section{
+        overflow:hidden;
+    }
+}
+
+@media (max-width: 600px){
+    header{
+        top:10px;
+    }
+
+    .logo img{
+        height:36px;
+    }
+
+    .hero{
+        padding-top:125px;
+    }
+
+    .hero-slogan{
+        font-size:24px;
+    }
+
+    .hero-description{
+        line-height:1.65;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    .icon{
+        width:150px;
+        height:150px;
+    }
+
+    .benefit-text h3{
+        font-size:28px;
+    }
+}
+
 
 .milestones-section {
     padding: 130px 8%;
@@ -615,6 +695,15 @@ font-size:38px;
 }
 
 
+
+/* V5 CLEAN — milestone PNG icon sizing */
+.milestone-icon img{
+    width:70%;
+    height:70%;
+    object-fit:contain;
+    display:block;
+}
+
 /* ==============================
    MOBILE
 ============================== */
@@ -780,7 +869,7 @@ RESPONSIVE CHO MOBILE & TABLET
 }
 /* ==================================================
    FOOTER — BUZZOFF
-   DÁN CSS NÀY NGAY TRƯỚC </style>
+   FOOTER CSS
 ================================================== */
 
 .buzzoff-footer {
@@ -1044,20 +1133,24 @@ RESPONSIVE CHO MOBILE & TABLET
     <span></span>
 </label>
 
-<nav>
-<a href="file:///D:/Buzzoff/index_V4.html#">Home</a><a href="file:///D:/Buzzoff/index_V4.html#">About</a><a href="file:///D:/Buzzoff/index_V4.html#">Journey</a><a href="file:///D:/Buzzoff/index_V4.html#">Tours</a><a href="file:///D:/Buzzoff/index_V4.html#">Contact</a>
+<nav aria-label="Main navigation">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#journey">Journey</a>
+<a href="#benefits">Benefits</a>
+<a href="#contact">Contact</a>
 </nav>
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 <div>
 <div class="tag">Digital Detox Camp</div>
 <h1>Disconnect.<br><span>Reconnect.</span></h1>
 <p class="hero-slogan">No Screen. More Green. Real You.</p>
 <p class="hero-description">Hành trình giúp bạn tạm rời xa màn hình để kết nối với thiên nhiên, bản thân và những người xung quanh, đồng thời học cách nhìn nhận và chọn lọc thế giới thông tin một cách chủ động hơn.</p>
 <div class="buttons">
-<a href="file:///D:/Buzzoff/index_V4.html#" class="btn primary">Đặt tour</a>
-<a href="file:///D:/Buzzoff/index_V4.html#" class="btn secondary">Khám phá</a>
+<a href="#contact" class="btn primary">Đặt tour</a>
+<a href="#about" class="btn secondary">Khám phá</a>
 </div>
 </div>
 
@@ -1114,7 +1207,7 @@ RESPONSIVE CHO MOBILE & TABLET
 <!-- ==================================================
 SECTION 3 - ABOUT BUZZ OFF
 ================================================== -->
-<section class="about-section">
+<section class="about-section" id="about">
 <div class="about-container">
 <div class="about-content">
 <div class="about-highlight">
@@ -1141,7 +1234,7 @@ Trong suốt 36 giờ, bạn sẽ không sử dụng bất kỳ thiết bị có
 <!-- ==================================================
 SECTION 4 - BENEFITS
 ================================================== -->
-<section class="benefits-section">
+<section class="benefits-section" id="benefits">
 <div class="benefits-title">
 <span>BENEFITS OF DIGITAL DETOX</span>
 <h2>Lợi ích của Digital Detox</h2>
@@ -1153,7 +1246,7 @@ tìm lại sự cân bằng và xây dựng một lối sống lành mạnh tron
 <!-- Benefit 1 -->
 <div class="benefit">
 <div class="benefit-image">
-<img src="Images/Benefit1.png"
+<img src="./Buzz Off_20.07_files/Benefit1.png"
 alt="Benefit 1">
 </div>
 <div class="benefit-text">
@@ -1168,7 +1261,7 @@ Hãy tạm gác lại những áp lực, deadline và guồng quay không hồi 
 <!-- Benefit 2 -->
 <div class="benefit reverse">
 <div class="benefit-image">
-<img src="Images/Benefit2.png"
+<img src="./Buzz Off_20.07_files/Benefit2.png"
 alt="Benefit 2">
 </div>
 <div class="benefit-text">
@@ -1183,7 +1276,7 @@ Cùng cộng đồng người lớn tuổi chia sẻ, lắng nghe và học hỏ
 <!-- Benefit 3 -->
 <div class="benefit">
 <div class="benefit-image">
-<img src="Images/Benefit3.png"
+<img src="./Buzz Off_20.07_files/Benefit3.png"
 alt="Benefit 3">
 </div>
 <div class="benefit-text">
@@ -1201,7 +1294,7 @@ Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off m
      DÁN NGAY SAU SECTION 4
 ========================================================= -->
 
-<section class="milestones-section">
+<section class="milestones-section" id="journey">
 
     <!-- =========================
          SECTION HEADER
@@ -1246,7 +1339,7 @@ Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off m
                 <!-- PNG ICON 01 -->
                 <div class="milestone-icon">
                     <img
-                        src="images/icon-disconnect.png"
+                        src="./Buzz Off_20.07_files/icon-disconnect.png"
                         alt="Disconnect"
                     >
                 </div>
@@ -1286,7 +1379,7 @@ Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off m
                 <!-- PNG ICON 02 -->
                 <div class="milestone-icon">
                     <img
-                        src="images/icon-discover.png"
+                        src="./Buzz Off_20.07_files/icon-discover.png"
                         alt="Discover"
                     >
                 </div>
@@ -1326,7 +1419,7 @@ Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off m
                 <!-- PNG ICON 03 -->
                 <div class="milestone-icon">
                     <img
-                        src="images/icon-decode.png"
+                        src="./Buzz Off_20.07_files/icon-decode.png"
                         alt="Decode"
                     >
                 </div>
@@ -1366,7 +1459,7 @@ Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off m
                 <!-- PNG ICON 04 -->
                 <div class="milestone-icon">
                     <img
-                        src="images/icon-reconnect.png"
+                        src="./Buzz Off_20.07_files/icon-reconnect.png"
                         alt="Reconnect"
                     >
                 </div>
@@ -1406,7 +1499,7 @@ Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off m
                 <!-- PNG ICON 05 -->
                 <div class="milestone-icon">
                     <img
-                        src="images/icon-share.png"
+                        src="./Buzz Off_20.07_files/icon-share.png"
                         alt="Share"
                     >
                 </div>
@@ -1441,7 +1534,7 @@ Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off m
      DÁN SAU SECTION 5
 ================================================== -->
 
-<footer class="buzzoff-footer">
+<footer class="buzzoff-footer" id="contact">
 
 
     <!-- ==============================
@@ -1460,7 +1553,7 @@ Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off m
         </p>
 
         <a
-            href="#"
+            href="#contact"
             class="footer-cta-button"
         >
             Trải nghiệm Digital Detox
@@ -1488,7 +1581,7 @@ Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off m
             -->
 
             <img
-                src="images/logo-buzzoff.png"
+                src="./Buzz Off_20.07_files/Typo Buzzoff.png"
                 alt="Buzzoff Digital Detox Camp"
             >
 
@@ -1580,4 +1673,39 @@ Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off m
 
     </div>
 </footer>
+
+<script>
+/*
+  V5 CLEAN — image fallback
+  Primary location: ./Buzz Off_20.07_files/
+  Fallback locations: ./Images/ and ./images/
+*/
+document.addEventListener("DOMContentLoaded", () => {
+  const fallbackMap = [
+    ["Benefit1.png", ["./Images/Benefit1.png", "./images/Benefit1.png"]],
+    ["Benefit2.png", ["./Images/Benefit2.png", "./images/Benefit2.png"]],
+    ["Benefit3.png", ["./Images/Benefit3.png", "./images/Benefit3.png"]],
+    ["icon-disconnect.png", ["./Images/icon-disconnect.png", "./images/icon-disconnect.png"]],
+    ["icon-discover.png", ["./Images/icon-discover.png", "./images/icon-discover.png"]],
+    ["icon-decode.png", ["./Images/icon-decode.png", "./images/icon-decode.png"]],
+    ["icon-reconnect.png", ["./Images/icon-reconnect.png", "./images/icon-reconnect.png"]],
+    ["icon-share.png", ["./Images/icon-share.png", "./images/icon-share.png"]],
+  ];
+
+  document.querySelectorAll("img").forEach((img) => {
+    img.addEventListener("error", function handleImageError() {
+      const fileName = this.src.split("/").pop();
+      const match = fallbackMap.find(([name]) => name === fileName);
+      if (!match) return;
+
+      const alternatives = match[1];
+      const next = alternatives.shift();
+      if (!next) return;
+
+      this.src = next;
+    }, { once: false });
+  });
+});
+</script>
+
 </body></html>
