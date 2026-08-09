@@ -779,6 +779,259 @@ RESPONSIVE CHO MOBILE & TABLET
     .icon{width:200px;height:200px;}
     .cta p{font-size:22px;}
 }
+/* ==================================================
+   FOOTER — BUZZOFF
+   DÁN CSS NÀY NGAY TRƯỚC </style>
+================================================== */
+
+.buzzoff-footer {
+    background: var(--green);
+    color: #fff;
+    padding: 100px 8% 35px;
+    overflow: hidden;
+}
+
+/* ==============================
+   FINAL CTA
+============================== */
+
+.footer-cta {
+    max-width: 900px;
+    margin: 0 auto 90px;
+    text-align: center;
+}
+
+.footer-cta h2 {
+    margin: 0 0 20px;
+
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    font-weight: 800;
+
+    color: #fff;
+}
+
+.footer-cta h2 span {
+    color: var(--yellow);
+}
+
+.footer-cta p {
+    max-width: 620px;
+    margin: 0 auto 35px;
+
+    font-size: 19px;
+    line-height: 1.8;
+
+    color: rgba(255,255,255,.78);
+}
+
+/* CTA BUTTON */
+
+.footer-cta-button {
+    display: inline-flex;
+
+    padding: 15px 28px;
+
+    background: var(--yellow);
+    color: var(--green);
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.footer-cta-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.18);
+}
+
+
+/* ==============================
+   FOOTER MAIN
+============================== */
+
+.footer-main {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding-top: 55px;
+
+    border-top: 1px solid rgba(255,255,255,.15);
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr;
+
+    gap: 70px;
+}
+
+
+/* ==============================
+   BRAND
+============================== */
+
+.footer-brand img {
+    width: 130px;
+    height: auto;
+
+    margin-bottom: 20px;
+}
+
+.footer-brand h3 {
+    margin: 0 0 12px;
+
+    font-size: 26px;
+
+    color: #fff;
+}
+
+.footer-brand p {
+    max-width: 330px;
+
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: rgba(255,255,255,.65);
+}
+
+
+/* ==============================
+   FOOTER COLUMNS
+============================== */
+
+.footer-column h4 {
+    margin: 0 0 20px;
+
+    color: var(--yellow);
+
+    font-size: 14px;
+
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+}
+
+.footer-column a {
+    display: block;
+
+    margin-bottom: 13px;
+
+    color: rgba(255,255,255,.75);
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition:
+        color .25s ease,
+        transform .25s ease;
+}
+
+.footer-column a:hover {
+    color: #fff;
+
+    transform: translateX(4px);
+}
+
+
+/* ==============================
+   BOTTOM
+============================== */
+
+.footer-bottom {
+    max-width: 1200px;
+
+    margin: 60px auto 0;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255,255,255,.1);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: rgba(255,255,255,.5);
+
+    font-size: 13px;
+}
+
+.footer-bottom span {
+    color: var(--yellow);
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 800px) {
+
+    .buzzoff-footer {
+        padding: 80px 6% 30px;
+    }
+
+    .footer-cta {
+        margin-bottom: 70px;
+    }
+
+    .footer-cta p {
+        font-size: 17px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 45px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+}
 </style>
 </head>
 <body>
@@ -1183,7 +1436,153 @@ Giữa dòng chảy thông tin khổng lồ của thời đại số, Buzz Off m
 
 
     </div>
+<!-- ==================================================
+     FOOTER — BUZZOFF
+     DÁN SAU SECTION 5
+================================================== -->
 
+<footer class="buzzoff-footer">
+
+
+    <!-- ==============================
+         FINAL CTA
+    =============================== -->
+
+    <div class="footer-cta">
+
+        <h2>
+            Ready to <span>Buzz Off?</span>
+        </h2>
+
+        <p>
+            Leave the screen behind.
+            Come back to yourself.
+        </p>
+
+        <a
+            href="#"
+            class="footer-cta-button"
+        >
+            Trải nghiệm Digital Detox
+        </a>
+
+    </div>
+
+
+    <!-- ==============================
+         FOOTER MAIN
+    =============================== -->
+
+    <div class="footer-main">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <!--
+                LOGO BUZZOFF
+
+                Đổi đường dẫn nếu logo của bạn
+                có tên hoặc vị trí khác.
+            -->
+
+            <img
+                src="images/logo-buzzoff.png"
+                alt="Buzzoff Digital Detox Camp"
+            >
+
+            <h3>
+                BUZZOFF
+            </h3>
+
+            <p>
+                No Screen. More Green. Real You.
+                Một hành trình tạm rời xa màn hình
+                để kết nối sâu hơn với thiên nhiên,
+                những người xung quanh và chính mình.
+            </p>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="footer-column">
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                Buzzoff là gì?
+            </a>
+
+            <a href="#benefits">
+                Digital Detox Benefits
+            </a>
+
+            <a href="#journey">
+                The Buzzoff Journey
+            </a>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h4>
+                Connect
+            </h4>
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                Facebook
+            </a>
+
+            <a href="mailto:hello@buzzoff.vn">
+                hello@buzzoff.vn
+            </a>
+
+            <a href="#">
+                Contact us
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ==============================
+         FOOTER BOTTOM
+    =============================== -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 BUZZOFF Digital Detox Camp.
+            All rights reserved.
+        </p>
+
+        <p>
+            <span>🐝</span>
+            No Screen. More Green. Real You.
+        </p>
+
+    </div>
+
+
+</footer>
 </section>
 </section>
 </section>
